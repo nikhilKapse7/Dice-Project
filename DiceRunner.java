@@ -14,12 +14,12 @@ public class DiceRunner
 			System.out.println("roll "+count2);
 			System.out.println(die1.toString());
 			System.out.println(die2.toString());
-			if (die1.getValue()==die2.getValue())
+			if (die1.getValue()==1&&die2.getValue()==1)
 			{
 				System.out.println();
 				System.out.println("Snake eyes!");
-				System.out.println("die 1 has "+die1.getSides()+" sides and a value of "+die1.getValue());
-				System.out.println("die 2 has "+die2.getSides()+" sides and a value of "+die2.getValue());
+				System.out.println("die 1 has "+die1.getSides()+" sides");
+				System.out.println("die 2 has "+die2.getSides()+" sides");
 				count--;
 			}
 			count2++;
