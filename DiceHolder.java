@@ -11,27 +11,27 @@ public class DiceHolder {
 
 	public int addDie(Die die) {
 		//adds die
-		if(container.size() >= 6) {
+		if(container.size() >= 6)
 			return -1;
-		}
-		else if( container.size() < 6) {
+
+		else if( container.size() < 6)
 			container.add(die);
 			return 1;
-		}
+
 	}
 
 
 	public void shake() {
 		//shakes up dice in container
 		for(int i = 0; i < container.size(); i++) {
-			roll(container.get(i));
+			container.get(i).roll();
 		}
 	}
 
 
 	public String toString() {
 		//prints out all dice
-		String allDice;
+		String allDice = "";
 		for(int i = 0; i < container.size(); i++) {
 				allDice += container.get(i) + "\n";
 		}

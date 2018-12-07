@@ -24,5 +24,12 @@ public class DiceRunner
 			}
 			count2++;
 		}
+		//test 2
+		DiceHolder holder = new DiceHolder();
+		int i = 0;
+		while(i < 6) {
+			holder.addDie();
+			i++;
+		}
 	}
 }
