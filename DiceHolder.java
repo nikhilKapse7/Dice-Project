@@ -3,9 +3,7 @@ public class DiceHolder {
 	private ArrayList<Die> container;
 
 	public DiceHolder(){
-		for(int i = 0; i < 6; i++){
-			container.add(new Die());
-		}
+		container = new ArrayList<Die>();
 	}
 
 

@@ -26,11 +26,11 @@ public class DiceRunner
 			count2++;
 		}
 		//test 2
+		int random = (int)(Math.random()*6)+6;
 		DiceHolder holder = new DiceHolder();
-		int i = 0;
-		while(i < 6) {
-			holder.addDie();
-			i++;
+		for(int i = 0; i < 6; i++) {
+			Die die = new Die(random);
+			holder.addDie(die);
 		}
 	}
 }
