@@ -3,6 +3,7 @@ public class DiceRunner
 	public static void main(String[] args)
 	{
 		//test 1
+		System.out.println("\n TEST 1");
 		Die die1=new Die();
 		Die die2=new Die();
 		int count=0;
@@ -14,7 +15,7 @@ public class DiceRunner
 			System.out.println("roll "+count2);
 			System.out.println(die1.toString());
 			System.out.println(die2.toString());
-			if (die1.getValue()==1&&die2.getValue()==1)
+			if (die1.getValue()==1 && die2.getValue()==1)
 			{
 				System.out.println();
 				System.out.println("Snake eyes!");
@@ -26,11 +27,16 @@ public class DiceRunner
 			count2++;
 		}
 		//test 2
-		int random = (int)(Math.random()*6)+6;
+		System.out.println("\n TEST 2");
 		DiceHolder holder = new DiceHolder();
 		for(int i = 0; i < 6; i++) {
+			int random = (int)(Math.random()*17)+4;
 			Die die = new Die(random);
 			holder.addDie(die);
+			System.out.println(holder);
 		}
+		holder.shake();
+		System.out.println("\nShaken holder's dice: ");
+		System.out.print(holder);
 	}
 }
