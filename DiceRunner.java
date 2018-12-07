@@ -18,8 +18,9 @@ public class DiceRunner
 			{
 				System.out.println();
 				System.out.println("Snake eyes!");
-				System.out.println("die 1 has "+die1.getSides()+" sides");
-				System.out.println("die 2 has "+die2.getSides()+" sides");
+				System.out.println("die 1 has "+die1.getSides()+" sides and a value of "+die1.getValue());
+				System.out.println("die 2 has "+die2.getSides()+" sides and a value of "+die2.getValue());
+				System.out.println("It took "+count2+" rolls to get this result");
 				count--;
 			}
 			count2++;
